@@ -1,118 +1,13 @@
-<!-- <div id="app"></div> -->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Document</title>
-    <!-- <script src="index.js"></script> -->
+<label>Number 1: </label>
+<input name="number1" id="number1" value=""/>
 
-    <style>
-      .center {
-      margin: auto;
-      width: 60%; 
-      padding: 10px;
-    }
-      .button{background-color: #4CAF50;}
-      .button1{background-color:  #e7e7e7;}
-      </style>
-  </head>
-  <body>
-    <div class="center" id="result">
-     
-       <h2 style="text-align:center">Calculator!!</h2>
+<br/>
 
-      <form name="form1">
+<label>Number 1: </label>
+<input name="number2" id="number2" value=""/>
 
-        <label>Number 1:</label>
-        <input type="number" id="no1" name="num1" required/>
-        <br /><br />
+<br/>
 
-        <label>Number 2:</label>
-        <input type="number" id="no2" name="num2" required/>
-        <br /><br />
+<h2 id="ans"></h2>
 
-        <label>Operations:</label>
-        <select id="operator">
-        
-          <option value="add">Addition</option>
-          <option value="subt">Subtraction</option>
-          <option value="mult">Multiplication</option>
-          <option value="div">division</option>
-          <option value="mod">modulus</option>
-
-        </select>
-        <br /><br />
-
-        <button class="button" type="button" onclick="opration()">Submit</button>
-       
-        &nbsp;
-        <button class="button1" type="reset">Reset</button>
-      </form>
-     </div>
-
-<script>
-   function opration()
-      {
-       var no1=parseInt(document.getElementById('no1').value);
-       var no2=parseInt(document.getElementById('no2').value);
-       var oper=document.getElementById('operator').value;
-      var result=0;
-    if(document.form1.no1.value == "" || document.form1.no1.value == null)
-    {
-            alert("enter no1 to calculate");
-    }
-    else if(document.form1.no2.value == "" || document.form1.no2.value == null)
-    {
-        alert("enter no2 to calculate");
-    }
-
-    if(oper=="add")
-    {
-      res= no1 + no2;
-         document.getElementById('result').innerHTML=res;
-         console.log("The addition of two numbers = " + res);
-         document.writeln("the addition of " + no1 + " and "  + no2 + " is " + res); 
-    }
-    if(oper=="subt")
-    {
-      res= no1 - no2a ;
-         document.getElementById('result').innerHTML=res;
-         console.log("The subtraction of two numbers = " + res);
-         document.writeln("the subtraction of " + no1 + " and "  + no2 + " is " + res); 
-    }
-    if(oper=="mult")
-    {
-   res= no1 * no2;
-         document.getElementById('result').innerHTML=res;
-         console.log("The multiplication of two numbers = " + res);
-         document.writeln("the multiplication of " + no1 + " and "  + no2 + " is " + res); 
-    }
-    if(oper=="mod")
-       {
-         res=no1 % no2;
-         document.getElementById('result').innerHTML=res;
-         console.log("The modulus of two numbers = " + res);
-         document.writeln("the modulus of " + no1 + " and "  + no2 + " is " + res); 
-       }
-    if(oper=="div")
-    {
-      if(no2=='0')
-      {
-           alert('It is invalid number,please enter valid number');
-      }
-      else
-      {
-       res= no1 / no2;
-         document.getElementById('result').innerHTML=res;
-         console.log("The division of two numbers = " + res);
-         document.writeln("the division of " + no1 + " and "  + no2 + " is " + res); 
-    }
-    }
-      
-}
-
-   
-
-</script>    
-
-  </body>
-</html>
+<button id="submit">Submit</button>
