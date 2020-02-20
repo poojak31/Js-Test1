@@ -37,6 +37,8 @@
           <option value="subt">Subtraction</option>
           <option value="mult">Multiplication</option>
           <option value="div">division</option>
+          <option value="mod">modulus</option>
+
         </select>
         <br /><br />
 
@@ -75,21 +77,21 @@
       res= no1 - no2a ;
          document.getElementById('result').innerHTML=res;
          console.log("The subtraction of two numbers = " + res);
-         document.writeln("the addition of " + no1 + " and "  + no2 + " is " + res); 
+         document.writeln("the subtraction of " + no1 + " and "  + no2 + " is " + res); 
     }
     if(oper=="mult")
     {
    res= no1 * no2;
          document.getElementById('result').innerHTML=res;
          console.log("The multiplication of two numbers = " + res);
-         document.writeln("the addition of " + no1 + " and "  + no2 + " is " + res); 
+         document.writeln("the multiplication of " + no1 + " and "  + no2 + " is " + res); 
     }
     if(oper=="mod")
        {
          res=no1 % no2;
          document.getElementById('result').innerHTML=res;
          console.log("The modulus of two numbers = " + res);
-         document.writeln("the addition of " + no1 + " and "  + no2 + " is " + res); 
+         document.writeln("the modulus of " + no1 + " and "  + no2 + " is " + res); 
        }
     if(oper=="div")
     {
@@ -101,8 +103,8 @@
       {
        res= no1 / no2;
          document.getElementById('result').innerHTML=res;
-         console.log("The divisionof two numbers = " + res);
-         document.writeln("the addition of " + no1 + " and "  + no2 + " is " + res); 
+         console.log("The division of two numbers = " + res);
+         document.writeln("the division of " + no1 + " and "  + no2 + " is " + res); 
     }
     }
       
